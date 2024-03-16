@@ -11,6 +11,12 @@ You will create a tool that will accept a list of words and attempt to discover 
 
 `Translated with DeepL.com`
 
+## Author
+
+Full name: ANDRIANARISOA Hajatiana Tantely
+Email: hei.hajatiana@gmail.com
+REF: STD21038
+
 ## Install and run locally
 
 There is actually no Build executable for this CLI, so you have to build it from source
