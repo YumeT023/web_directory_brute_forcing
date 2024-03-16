@@ -1,0 +1,7 @@
+# ide
+.vscode
+.idea
+
+# rust build output dir
+target
+build
