@@ -56,7 +56,7 @@ pub fn resolve_paths(
         for path in paths {
           let url = format_url(&base_path, &path);
           if verbose {
-            println!("resolving: {}", url);
+            println!("resolving: {}", &path);
           }
           if is_url_resolved(&url) {
             // acquire the resolved_urls so only one thread have access to it at this time
@@ -65,7 +65,7 @@ pub fn resolve_paths(
             let mut resolved_urls = resolved_urls.lock().unwrap();
 
             // if the url is resolved then push it inside the vec
-            resolved_urls.push(url);
+            resolved_urls.push(path);
           }
         }
       })
